@@ -1,0 +1,14 @@
+#wip {
+	margin: var(--calc-40) 0 0;
+	background: url("../../images/404.png") center/contain no-repeat;
+	text-align: center;
+	height: 80vh;
+	width: 100%;
+}
+
+#wip h1 {
+	font-size: 48px;
+	font-weight: var(--fw-bold);
+	color: var(--txt-clr-red-1);
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}

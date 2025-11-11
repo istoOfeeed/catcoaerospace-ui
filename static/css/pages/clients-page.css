@@ -1,0 +1,21 @@
+main.clients-page .clients {
+	margin-bottom: 0;
+}
+
+main.clients-page section.clients .client-logos {
+	display: grid;
+	grid-template-columns: repeat(5, minmax(250px, 1fr));
+	align-items: center;
+	justify-items: center;
+	justify-content: center;
+
+	background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../../images/airplane-bg.png") center/contain no-repeat;
+	background-blend-mode: normal;
+	background-color: white;
+	background-size: contain;
+}
+
+main.clients-page section.clients .client-logos img {
+	height: 160px;
+	object-fit: contain;
+}

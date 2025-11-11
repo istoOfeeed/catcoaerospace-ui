@@ -1,0 +1,26 @@
+main.about-us-page img {
+	width: auto;
+	height: 200px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+main.about-us-page h3 {
+	position: relative;
+	font-size: var(--calc-32);
+	font-weight: var(--fw-semiBold);
+	margin-bottom: 0.5rem;
+	/* text-decoration: underline;
+	text-decoration-color: var(--txt-clr-red-1);
+	text-underline-offset: 5px; */
+}
+
+main.about-us-page p {
+	text-align: justify;
+	text-indent: 5%;
+}
+
+main.about-us-page span {
+	color: var(--txt-clr-red-1);
+	font-weight: var(--fw-bold);
+}

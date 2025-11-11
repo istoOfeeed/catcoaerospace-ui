@@ -1,0 +1,274 @@
+section.hero {
+	display: flex;
+	align-items: center;
+	padding-left: var(--calc-80);
+	height: calc(100% - calc(160rem / 16));
+	margin-bottom: 40px;
+}
+section.hero .cta {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: var(--calc-8);
+}
+section.hero .cta .cta-txt {
+	font-size: var(--calc-40);
+	font-weight: var(--fw-semiBold);
+	line-height: 1;
+}
+section.hero .cta .cta-desc {
+	font-size: var(--calc-20);
+	text-align: justify;
+	width: 90%;
+}
+section.hero .image-container {
+	/* position: relative; */
+	flex: 1;
+	/* overflow: hidden; */
+}
+section.hero .image-container img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+section.company-info {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: var(--calc-80);
+}
+section.company-info .info-card {
+	color: var(--clr-white);
+	width: 360px;
+	height: 380px;
+	background-color: var(--bg-clr-red-2);
+	border-radius: var(--calc-8);
+	padding: 2rem;
+}
+section.company-info .info-card .info-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	gap: calc(20rem / 16);
+}
+section.company-info .info-card .info-header i {
+	font-size: var(--calc-24);
+	padding: 24px;
+	color: #323232;
+	background-color: var(--clr-white-3);
+	border-radius: 50%;
+}
+section.company-info .info-card .info-header p {
+	text-transform: uppercase;
+	font-size: var(--calc-20);
+	font-weight: var(--fw-bold);
+	line-height: 1.2;
+}
+section.company-info .info-card .info-desc {
+	margin-top: 20px;
+	opacity: 80%;
+	font-size: var(--calc-18);
+	line-height: 1.5;
+}
+
+section.brands {
+	margin-bottom: var(--calc-80);
+}
+section.brands .brand-logos {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 32px;
+}
+section.brands .brand-logos img {
+	width: 180px;
+	height: 80px;
+}
+
+section.company-history {
+	display: flex;
+	justify-content: space-between;
+	gap: var(--calc-40);
+	color: var(--clr-white);
+	background-color: var(--bg-clr-red-3);
+	padding-block: 60px;
+	margin-bottom: 80px;
+}
+section.company-history .history-left {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+section.company-history .history-right {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: var(--calc-24);
+}
+section.company-history .history-left h2 {
+	font-size: var(--calc-32);
+	text-align: left;
+	line-height: 1.3;
+	opacity: 80%;
+}
+section.company-history .history-left a {
+	display: inline-block;
+	padding: 12px 24px;
+	color: var(--bg-clr-red-3);
+	background-color: var(--clr-white);
+	border-radius: var(--calc-4);
+	font-weight: var(--fw-medium);
+}
+section.company-history .history-left a:hover {
+	background-color: var(--clr-white-3);
+	transition: 0.3s ease-in-out;
+}
+section.company-history .history-right p {
+	font-size: var(--calc-18);
+	text-align: justify;
+	opacity: 80%;
+}
+
+section.industries {
+	margin-bottom: 80px;
+}
+section.industries h3 {
+	margin: 0 auto;
+	max-width: 930px;
+	width: min(930px, calc(100% - 2rem));
+	font-size: clamp(18px, 2.4vw, 24px);
+	line-height: 1.2;
+}
+section.industries .industry-cards {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+	padding-top: var(--calc-40);
+}
+section.industries .industry-card {
+	position: relative;
+	width: auto;
+	height: 240px;
+	overflow: hidden;
+	border-radius: 12px;
+	color: var(--clr-white);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+section.industries .industry-card img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	transition: transform 0.3s ease;
+}
+section.industries .industry-card:hover img {
+	transform: scale(1.05);
+}
+section.industries .industry-card p {
+	position: relative;
+	z-index: 3;
+	font-size: var(--calc-18);
+	font-weight: var(--fw-bold);
+	text-align: center;
+	filter: drop-shadow(3px 5px 3px rgba(0, 0, 0, 0.6));
+}
+
+section.featured-products {
+	position: relative;
+	padding-block: var(--calc-80);
+	background: linear-gradient(rgba(190, 16, 38, 0.5), rgba(190, 16, 38, 0.5)), url("../../images/featured-products-bg.png") center/cover no-repeat;
+	margin-bottom: 80px;
+}
+section.featured-products h2 {
+	color: var(--clr-white);
+	margin-bottom: 40px;
+	line-height: 1;
+}
+section.featured-products .product-cards {
+	display: flex;
+	justify-content: space-between;
+	/* flex-wrap: nowrap; */
+	gap: 20px;
+	/* overflow-x: auto; */
+	/* padding: 0 20px; */
+}
+
+.product-card {
+	width: 290px;
+	height: 300px;
+	border: 1px solid rgba(0, 0, 0, 0.25);
+	border-radius: 8px;
+	color: var(--clr-black);
+	background-color: var(--clr-white);
+	flex: 0 0 auto;
+	display: flex;
+	flex-direction: column;
+	transition: transform 0.3s;
+}
+.product-card:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+.product-card .product-img-wrapper {
+	position: relative;
+	border-radius: 8px 8px 0 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+	width: 289px;
+	height: 225px;
+	background: linear-gradient(to bottom, #f2f2f2, #d9d9d9);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.product-card .product-img-wrapper img {
+	width: 225px;
+	height: 225px;
+	object-fit: contain;
+}
+.product-card .product-img-wrapper i {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 20px;
+	color: #000;
+	cursor: pointer;
+}
+.product-card p {
+	font-size: 0.85rem;
+	font-weight: var(--fw-semiBold);
+	display: -webkit-box;
+	-webkit-line-clamp: 3; /* limit to 2 lines */
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding: 10px 15px;
+}
+
+section.clients {
+	margin-bottom: var(--calc-40);
+}
+section.clients .client-logos {
+	display: grid;
+	grid-template-columns: repeat(5, minmax(173px, 180px));
+	align-items: center;
+	justify-items: center;
+	justify-content: space-evenly;
+
+	background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../../images/airplane-bg-1.png") center/contain no-repeat;
+	background-blend-mode: normal;
+	background-color: white;
+	background-size: contain;
+}
+section.clients .client-logos img {
+	height: 120px;
+	object-fit: contain;
+}

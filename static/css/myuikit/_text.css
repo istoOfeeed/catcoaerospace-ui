@@ -1,0 +1,76 @@
+h2 {
+	font-size: var(--calc-48);
+	text-align: center;
+}
+
+h2.title-page {
+	font-weight: var(--bold);
+}
+
+h3 {
+	font-size: var(--calc-24);
+	text-align: center;
+}
+
+.caption {
+	font-size: var(--calc-12);
+	font-weight: var(--fw-400);
+}
+
+/* Alignment */
+.text-center {
+	text-align: center;
+}
+
+.text-end {
+	text-align: end;
+}
+
+.text-start {
+	text-align: start;
+}
+
+.text-justify {
+	text-align: justify;
+}
+
+/* Font Sizes */
+.fs-12 {
+	font-size: var(--calc-12);
+}
+
+.fs-14 {
+	font-size: calc(14rem / 16);
+}
+
+.fs-16 {
+	font-size: var(--calc-16);
+}
+
+.fs-18 {
+	font-size: calc(18rem / 16);
+}
+
+.fs-20 {
+	font-size: var(--calc-20);
+}
+
+.fs-24 {
+	font-size: var(--calc-24);
+}
+
+.fs-28 {
+	font-size: var(--calc-28);
+}
+
+.fs-32 {
+	font-size: var(--calc-32);
+}
+
+.fs-36 {
+	font-size: var(--calc-36);
+}
+
+.fs-40 {
+	font-size: var(--calc-40);
+}

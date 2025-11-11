@@ -1,0 +1,73 @@
+:root {
+	--ff: "Montserrat", sans-serif;
+
+	--clr-white: #fff;
+	--clr-white-2: #f2f2f2;
+	--clr-white-3: #d9d9d9;
+
+	--clr-black: #000;
+
+	--bg-clr-blue-1: #21284f;
+	--bg-clr-blue-2: #1c2140;
+
+	--bg-clr-red-2: #db011d;
+	--bg-clr-red-3: #b90c27;
+	--bg-clr-red-4: #be1026;
+	--bg-clr-red-5: #c62828;
+	--bg-clr-red-6: #d32f2f;
+
+	--txt-clr-red-1: #b80b26;
+
+	/* ! Need some change */
+	/* --input-bgc: #23262d;
+	--input-bgc-hover: #343841; */
+
+	/* --bx-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+	--fw-regular: 400;
+	--fw-medium: 500;
+	--fw-semiBold: 600;
+	--fw-bold: 700;
+	--fw-extraBold: 800;
+
+	--calc-4: calc(4rem / 16);
+	--calc-8: calc(8rem / 16);
+	--calc-12: calc(12rem / 16);
+	--calc-16: calc(16rem / 16);
+	--calc-20: calc(20rem / 16);
+	--calc-24: calc(24rem / 16);
+	--calc-28: calc(28rem / 16);
+	--calc-32: calc(32rem / 16);
+	--calc-36: calc(36rem / 16);
+	--calc-40: calc(40rem / 16);
+	--calc-44: calc(44rem / 16);
+	--calc-48: calc(48rem / 16);
+	--calc-52: calc(52rem / 16);
+	--calc-56: calc(56rem / 16);
+	--calc-60: calc(60rem / 16);
+	--calc-64: calc(64rem / 16);
+	--calc-68: calc(68rem / 16);
+	--calc-72: calc(72rem / 16);
+	--calc-76: calc(76rem / 16);
+	--calc-80: calc(80rem / 16);
+
+	--ncalc-4: calc(-4rem / 16);
+	--ncalc-8: calc(-8rem / 16);
+	--ncalc-12: calc(-12rem / 16);
+	--ncalc-16: calc(-16rem / 16);
+	--ncalc-20: calc(-20rem / 16);
+	--ncalc-24: calc(-24rem / 16);
+	--ncalc-28: calc(-28rem / 16);
+	--ncalc-32: calc(-32rem / 16);
+	--ncalc-36: calc(-36rem / 16);
+	--ncalc-40: calc(-40rem / 16);
+	--ncalc-44: calc(-44rem / 16);
+	--ncalc-48: calc(-48rem / 16);
+	--ncalc-52: calc(-52rem / 16);
+	--ncalc-56: calc(-56rem / 16);
+	--ncalc-60: calc(-60rem / 16);
+	--ncalc-64: calc(-64rem / 16);
+	--ncalc-68: calc(-68rem / 16);
+	--ncalc-72: calc(-72rem / 16);
+	--ncalc-76: calc(-76rem / 16);
+	--ncalc-80: calc(-80rem / 16);
+}

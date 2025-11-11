@@ -1,0 +1,227 @@
+/* ! Need some change */
+form.main-form {
+	margin-inline: auto;
+	border-radius: var(--calc-8);
+	padding: var(--calc-20) var(--calc-40);
+
+	/* ! Change accordingly */
+	height: calc(100vh - calc(192rem / 16));
+	overflow: auto;
+
+	display: flex;
+	flex-direction: column;
+
+	border: 2px solid var(--card-brdr-clr);
+	background-color: var(--card-bgc);
+}
+
+form.main-form::-webkit-scrollbar {
+	width: 8px;
+}
+
+form.main-form::-webkit-scrollbar-thumb {
+	background-color: var(--primary-clr);
+	border-radius: 10px;
+	background-clip: padding-box;
+}
+
+form.main-form .form-heading {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+form.main-form .form-heading h3 {
+	width: 100%;
+	font-size: var(--calc-32);
+	font-weight: var(--fw-700);
+	padding-bottom: var(--calc-32);
+
+	/* ! Change Accordingly */
+	color: var(--primary-clr);
+}
+
+form.main-form .form-body {
+	flex: 1 0 auto;
+}
+
+form.main-form .form-body > .input-wrapper,
+form.main-form .form-body > .radio-wrapper,
+form.main-form .form-body > .checkbox-wrapper {
+	margin-block: var(--calc-20);
+}
+
+form.main-form .form-body > .input-wrapper .inline,
+form.main-form .form-body .radio-wrapper .inline,
+form.main-form .form-body .checkbox-wrapper .inline {
+	display: flex;
+	align-items: start;
+}
+
+/* ! Research */
+form.main-form .form-body > .input-wrapper:first-child {
+	margin-block: var(--calc-40);
+}
+
+form.main-form .form-body > .input-wrapper label,
+form.main-form .form-body .radio-wrapper p,
+form.main-form .form-body .checkbox-wrapper p {
+	font-size: var(--calc-16);
+	font-weight: var(--fw-500);
+
+	/* ! Change Accordingly */
+	color: var(--text-white);
+	width: 20%;
+}
+
+form.main-form .form-body input,
+form.main-form .form-body select,
+form.main-form .form-body textarea,
+form.main-form .form-body input[type="file"] {
+	height: 2.5rem;
+	width: 100%;
+	/* width: 100%; */
+}
+
+form.main-form .form-body input,
+form.main-form .form-body select,
+form.main-form .form-body textarea {
+	outline: none;
+	font-size: var(--calc-16);
+	border: none;
+	border-radius: var(--calc-4);
+	padding: var(--calc-8) var(--calc-16);
+
+	/* !Change accordingly */
+	color: var(--white-clr-2);
+
+	background: var(--input-bgc);
+}
+
+form.main-form .form-body input:focus,
+form.main-form .form-body select:focus,
+form.main-form .form-body textarea:focus {
+	/* !Change accordingly */
+	outline: none;
+	color: var(--white-clr);
+	background-color: var(--input-bgc-hover);
+	border: 2px solid var(--card-brdr-clr);
+}
+
+form.main-form .form-body input.error,
+form.main-form .form-body select.error,
+form.main-form .form-body textarea.error {
+	border: 2px solid var(--red-clr-1);
+	color: var(--red-clr-1);
+}
+
+form.main-form .form-body input.error:focus,
+form.main-form .form-body select.error:focus,
+form.main-form .form-body textarea.error:focus {
+	color: var(--white-clr);
+}
+
+form.main-form .form-body input.error::placeholder,
+form.main-form .form-body select.error::placeholder,
+form.main-form .form-body textarea.error::placeholder {
+	color: var(--red-clr-0);
+}
+
+form.main-form .form-body textarea {
+	height: calc(160rem / 16);
+	resize: none;
+}
+
+form.main-form .form-body select option:checked {
+	color: var(--text-white);
+	background-color: var(--primary-clr);
+}
+
+form.main-form .form-body .options-wrapper {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+}
+
+form.main-form .form-body .radio-wrapper .input-wrapper,
+form.main-form .form-body .checkbox-wrapper .input-wrapper {
+	font-size: 1rem;
+	line-height: 1.1;
+	display: grid;
+	grid-template-columns: 20% auto;
+	padding-block: 0.125rem;
+	width: 70%;
+}
+
+form.main-form .form-body input[type="radio"],
+form.main-form .form-body input[type="checkbox"] {
+	-webkit-appearance: none;
+	appearance: none;
+	margin: 0;
+	font: inherit;
+
+	height: 0.5rem;
+	width: 0.5rem;
+
+	transform: translateY(-0.075em);
+	padding: 0.5rem;
+	display: grid;
+	place-content: center;
+
+	/* color: blue; */
+	background-color: var(--input-bgc);
+	border-radius: 0.125rem;
+	border: 0.15rem solid var(--card-brdr-clr);
+}
+
+form.main-form .form-body input[type="radio"]::before,
+form.main-form .form-body input[type="checkbox"]::before {
+	content: "";
+	width: 1rem;
+	height: 1rem;
+	border-radius: 0.125rem;
+	transform: scale(0);
+	transition: 120ms transform ease-in-out;
+	box-shadow: inset 1em 1em var(--form-control-color);
+	background-color: CanvasText;
+}
+
+form.main-form .form-body input[type="radio"]:checked::before,
+form.main-form .form-body input[type="checkbox"]:checked::before {
+	background-color: var(--primary-clr);
+	transform: scale(1);
+}
+
+form.main-form .form-body input[type="radio"],
+form.main-form .form-body input[type="radio"]::before {
+	border-radius: 50%;
+}
+
+form.main-form .form-body p.error-text {
+	color: var(--red-clr-2);
+	font-size: calc(13rem / 16);
+	font-weight: var(--fw-400);
+	padding-top: var(--calc-4);
+	margin-left: 17%;
+}
+
+form.main-form .form-buttons {
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	gap: var(--calc-12);
+}
+
+form.main-form .form-buttons .button {
+	width: calc(96rem / 16);
+	font-size: var(--calc-14);
+	font-weight: var(--fw-500);
+}
+
+form.main-form .form-buttons .button.cancel {
+	background-color: var(--red-clr-2);
+}
+
+form.main-form .form-buttons .button.cancel:hover {
+	background-color: var(--red-clr-1);
+}

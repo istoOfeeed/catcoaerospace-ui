@@ -1,0 +1,88 @@
+.flex {
+	display: flex;
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.flex-start {
+	display: flex;
+	justify-content: start;
+}
+
+.flex-end {
+	display: flex;
+	justify-content: end;
+}
+
+.flex-1 {
+	flex: 1;
+}
+
+.items-start {
+	align-items: start;
+}
+
+.items-center {
+	align-items: center;
+}
+
+.items-end {
+	align-items: end;
+}
+
+.content-center {
+	justify-content: center;
+}
+
+.content-around {
+	justify-content: space-around;
+}
+
+.content-between {
+	justify-content: space-between;
+}
+
+.content-evenly {
+	justify-content: space-evenly;
+}
+
+.content-start {
+	justify-content: start;
+}
+
+.content-end {
+	justify-content: end;
+}
+
+.gap-4 {
+	gap: var(--calc-4);
+}
+
+.gap-8 {
+	gap: var(--calc-8);
+}
+
+.gap-12 {
+	gap: var(--calc-12);
+}
+
+.gap-16 {
+	gap: var(--calc-16);
+}
+
+.gap-20 {
+	gap: var(--calc-20);
+}
+
+.gap-24 {
+	gap: var(--calc-24);
+}

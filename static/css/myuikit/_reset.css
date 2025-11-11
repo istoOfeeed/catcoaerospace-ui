@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font: inherit;
+	color: inherit;
+}
+
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+body {
+	width: 100%;
+	min-height: 100vh;
+
+	font-family: var(--ff);
+	font-size: var(--calc-16);
+	font-weight: var(--fw-regular);
+	letter-spacing: -1.5%;
+	line-height: 1.5; /* ! Need to change */
+
+	color: var(--clr-black);
+	background: var(--clr-white);
+
+	display: flex;
+	flex-direction: column;
+	overflow-x: hidden;
+
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+p,
+h1,
+h2,
+h3 {
+	overflow-wrap: break-word;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul[role="list"],
+ol[role="list"] {
+	list-style: none;
+}
+
+button {
+	border: none;
+	cursor: pointer;
+	background: transparent;
+}
+
+img,
+svg,
+video,
+canvas,
+picture {
+	display: block;
+	max-width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html:focus-within {
+		scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}

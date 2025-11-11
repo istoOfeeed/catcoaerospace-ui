@@ -1,0 +1,44 @@
+/* Google Icons */
+.material-symbols-sharp {
+	font-variation-settings: "FILL" 0, "wght" 300, "GRAD" -25, "opsz" 24;
+}
+
+.material-symbols-sharp.bold {
+	font-variation-settings: "FILL" 0, "wght" 500, "GRAD" -25, "opsz" 24;
+}
+
+.material-symbols-sharp.fill {
+	font-variation-settings: "FILL" 1, "wght" 300, "GRAD" -25;
+}
+
+/* Reusables */
+.pointer {
+	cursor: pointer;
+}
+
+/* ! Need some change */
+/* Buttons */
+.button {
+	color: #fff;
+	background: var(--primary-clr);
+	padding: var(--calc-8) var(--calc-16);
+	border-radius: var(--calc-4);
+	font-size: var(--calc-16);
+	text-align: center;
+	width: calc(128rem / 16);
+}
+
+.button.is-long {
+	width: calc(176rem / 16);
+}
+
+.button span {
+	font-size: var(--calc-20);
+	padding-top: calc(1rem / 16);
+}
+
+.button.has-icon {
+	display: flex;
+	justify-content: center;
+	gap: var(--calc-4);
+}

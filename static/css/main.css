@@ -1,0 +1,39 @@
+/* Montserrat Font */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+
+/* Root and Reset */
+@import url(./myuikit/_root.css);
+@import url(./myuikit/_reset.css);
+
+/* Base Styles */
+@import url(./myuikit/_text.css);
+@import url(./myuikit/_spacing.css);
+@import url(./myuikit/_flexbox.css);
+@import url(./myuikit/_reusable.css);
+@import url(./myuikit/_form.css);
+
+/* Layout */
+@import url(./pages/_layout.css);
+@import url(./pages/_wip.css);
+@import url(./pages/index.css);
+@import url(./pages/products.css);
+@import url(./pages/product.css);
+@import url(./pages/clients-page.css);
+@import url(./pages/about-us-page.css);
+
+/* Responsiveness */
+/* Mobile */
+@media screen and (max-width: 767px) {
+}
+
+/* Tablet */
+@media screen and (max-width: 1023px) {
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+}
+
+/* Large Screen */
+@media screen and (min-width: 1600px) {
+}
