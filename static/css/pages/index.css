@@ -185,7 +185,7 @@ section.industries .industry-card p {
 section.featured-products {
 	position: relative;
 	padding-block: var(--calc-80);
-	background: linear-gradient(rgba(190, 16, 38, 0.5), rgba(190, 16, 38, 0.5)), url("../../images/featured-products-bg.png") center/cover no-repeat;
+	background: linear-gradient(rgba(190, 16, 38, 0.5), rgba(190, 16, 38, 0.5)), url("../../images/featured-products-bg.webp") center/cover no-repeat;
 	margin-bottom: 80px;
 }
 section.featured-products h2 {
@@ -263,7 +263,7 @@ section.clients .client-logos {
 	justify-items: center;
 	justify-content: space-evenly;
 
-	background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../../images/airplane-bg-1.png") center/contain no-repeat;
+	background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../../images/clients-bg.png") center/contain no-repeat;
 	background-blend-mode: normal;
 	background-color: white;
 	background-size: contain;

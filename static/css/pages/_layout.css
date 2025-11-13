@@ -33,7 +33,6 @@ header.topbar .contact-info {
 	font-size: calc(14rem / 16);
 	font-weight: var(--fw-medium);
 }
-
 header.navbar {
 	height: calc(100rem / 16);
 	display: flex;
@@ -75,7 +74,7 @@ header.navbar .search-n-list input[type="text"] {
 }
 header.navbar .search-n-list .quoted-products-icon {
 	position: relative;
-	display: inline-block1;
+	display: inline-block;
 }
 header.navbar .search-n-list .quoted-products-icon i {
 	font-size: 24px;

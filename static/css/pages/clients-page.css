@@ -9,7 +9,7 @@ main.clients-page section.clients .client-logos {
 	justify-items: center;
 	justify-content: center;
 
-	background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../../images/airplane-bg.png") center/contain no-repeat;
+	background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../../images/clients-bg-2.png") center/contain no-repeat;
 	background-blend-mode: normal;
 	background-color: white;
 	background-size: contain;
